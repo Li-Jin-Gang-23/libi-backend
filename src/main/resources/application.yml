@@ -88,7 +88,9 @@ cos:
     secretKey: xxx
     region: xxx
     bucket: xxx
-#  AccessKey
-#  dscjia4omtf5ly5ws5u08eu0bj4v228u
-#  SecretKey
-#  3ndaevms4z5c6zrw04aera11cfasnx19
+
+# ai 配置
+yuapi:
+  client:
+    access-key: dscjia4omtf5ly5ws5u08eu0bj4v228u
+    secret-key: 3ndaevms4z5c6zrw04aera11cfasnx19
