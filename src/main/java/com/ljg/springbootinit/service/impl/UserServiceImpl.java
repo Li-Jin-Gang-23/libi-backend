@@ -3,10 +3,10 @@ package com.ljg.springbootinit.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ljg.springbootinit.common.ErrorCode;
 import com.ljg.springbootinit.constant.CommonConstant;
 import com.ljg.springbootinit.constant.UserConstant;
 import com.ljg.springbootinit.exception.BusinessException;
-import com.ljg.springbootinit.common.ErrorCode;
 import com.ljg.springbootinit.mapper.UserMapper;
 import com.ljg.springbootinit.model.dto.user.UserQueryRequest;
 import com.ljg.springbootinit.model.entity.User;
@@ -15,16 +15,16 @@ import com.ljg.springbootinit.model.vo.LoginUserVO;
 import com.ljg.springbootinit.model.vo.UserVO;
 import com.ljg.springbootinit.service.UserService;
 import com.ljg.springbootinit.utils.SqlUtils;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 用户服务实现

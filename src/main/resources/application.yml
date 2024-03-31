@@ -40,9 +40,14 @@ spring:
     multipart:
       # 大小限制
       max-file-size: 10MB
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   address: 0.0.0.0
-  port: 8080
+  port: 12345
   servlet:
     context-path: /api
     # cookie 30 天过期
